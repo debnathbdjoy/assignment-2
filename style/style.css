@@ -49,7 +49,7 @@ nav li a{
 }
 .nav-icon-btn{
     border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
+    background: #E7E6E9;
     color: #3C354F;
     font-size: 18px;
     font-weight: 500;
@@ -123,7 +123,7 @@ nav li a{
     align-items: center;
     padding-left: 50px;
     padding-right: 130px;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    background: #FFF5FB;
     padding-bottom: 50px;
 }
 .gamer img{
@@ -149,6 +149,7 @@ nav li a{
 /* funny game section style  */
 .funny-videos{
     text-align: center;
+    padding-top: 100px;
 }
 .funny-videos h3{
     color: #0B0223;
@@ -170,9 +171,53 @@ nav li a{
 .online-game{
     display: flex;
     gap: 24px;
+    width: 40%;
+    height: 400px;
+    
+    padding-left: 120px;
 }
 .online-game img{
     height: 300px;
+}
+.online-game p{
+    color: #534C64;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+}
+.online-game-1:hover.overlay{
+    opacity: .8;
+}
+.image-hovar:hover .overlay{
+    visibility: visible;
+}
+.image-hovar{
+    position: relative;   
+}
+.overlay{
+    background: #3C354F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    height: 300px;
+    width: 256px;
+    opacity: .5;
 }
 
 
@@ -332,7 +377,7 @@ footer{
     padding: 120px;
 }
 footer p{
-    color: rgba(255, 255, 255, 0.60);
+    color: #D3D3D3;
     text-align: center;
 }
 .footer-gamer-icon{
@@ -366,7 +411,7 @@ footer p{
     display: flex;
     justify-content: center;
     gap: 60px;
-    color: rgba(255, 255, 255, 0.60);
+    color:  #D3D3D3;;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -389,7 +434,8 @@ footer p{
     nav ul,
     .gamer,
     .play-now,
-    .careers
+    .careers,
+    .online-game
     {
         flex-direction: column;
     }
@@ -459,11 +505,17 @@ footer p{
         margin: 0;
     }
     .socisl-media,
-    .footer-about
+    .footer-about,
+    .Terms-and-conditions
     {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 20px;
+        padding: 10px;
     }
-
+    .online-game{
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
 }
