@@ -297,7 +297,52 @@ nav li a{
     border: 1px solid #FF42A5;
     background: #FFF;
 }
-
+/* footer section style  */
+footer{
+    background: #0B0223;
+    padding: 120px;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+}
+.footer-gamer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-gamer-icon h2{
+    color: #FFF;
+}
+.footer-about{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.footer-about p{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.socisl-media{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    color: #FFF;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.Terms-and-conditions{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 50px;
+}
 
 
 
@@ -324,9 +369,6 @@ nav li a{
     }
     nav ul li{
         padding-top: 15px;
-    }
-    .gamer-icon{
-        text-align: center;
     }
     nav{
         padding-left: 50px;
@@ -386,6 +428,13 @@ nav li a{
     .game-collection{
         padding: 0;
         margin: 0;
+    }
+    .socisl-media,
+    .footer-about
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px;
     }
 
 }
